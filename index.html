@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>来自宇宙第一大天才的10年倒计时</title>
+<style type="text/css">
+h1 {font-size:64px;}
+h2 {font-size:44px;}
+h3 {font-size:24px;}
+hr {border:0; height:2px; width:100%; background-color:#ffffff}
+</style>
+</head>
+<body style="width:800px; height: 600px; margin:0 auto; background-position:center; background-size:cover;" background="background.jpg">
+<font color="#1E73BE">
+<h2>来自宇宙第一大天才的10年倒计时</h2>
+<h3>大天鹅，我爱你！</h3>
+</font>
+<hr>
+<center>
+    <br>
+    <br>
+    <h1>距离</h1>
+    <h1><time datetime="2013-4-1">2013-4-1</time></h1>
+    <br>
+    <div id="time">
+    </div>
+</center>
+</body>
+<script>
+    var timedate1 = new Date("April 1,2013");
+    var now = new Date();
+    var date1 = now.getTime() - timedate1.getTime();
+    var time1 = Math.floor(date1 / (1000 * 60 * 60 * 24));
+    document.getElementById("time").innerHTML="<h1>已经:" + time1 + "天";
+</script>
+</html>
